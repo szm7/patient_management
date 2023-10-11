@@ -215,8 +215,11 @@ class _AddPatientState extends State<AddPatient> {
               phNumber: phoneController.text,
             );
             addPatientToFirestore(newPatient);
-            Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => const MyHomePage()));
+            Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => const MyHomePage()),
+                ModalRoute.withName(''));
           },
           label: const Text('SAVE'),
           icon: const Icon(Icons.check),

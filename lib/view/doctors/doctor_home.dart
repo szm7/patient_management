@@ -46,7 +46,7 @@ class _HomeDoctorsState extends State<HomeDoctors> {
                         },
                         child: Container(
                             width: double.infinity,
-                            height: 120,
+                            height: 80,
                             decoration: BoxDecoration(
                                 color: const Color(0xffd7e3fc),
                                 borderRadius: BorderRadius.circular(10)),
@@ -76,47 +76,12 @@ class _HomeDoctorsState extends State<HomeDoctors> {
                                       ),
                                     ],
                                   ),
-                                  Container(
-                                    width: double.infinity,
-                                    height: 40,
-                                    decoration: BoxDecoration(
-                                        color: const Color(0xffedf2fb),
-                                        borderRadius: BorderRadius.circular(5)),
-                                    child: Row(
-                                      children: [
-                                        const Text(
-                                          ' Id :',
-                                          style: TextStyle(
-                                              color: Colors.black45,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                        SizedBox(
-                                            width: 240,
-                                            child: Text(
-                                              data['id'],
-                                              overflow: TextOverflow.ellipsis,
-                                              style: const TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.bold,
-                                                  fontStyle: FontStyle.italic),
-                                            )),
-                                        IconButton(
-                                            onPressed: () {
-                                              FlutterClipboard.copy(data['id']);
-                                            },
-                                            icon: const Icon(
-                                              Icons.copy,
-                                            ))
-                                      ],
-                                    ),
-                                  ),
                                   Row(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
                                       CircleAvatar(
-                                        radius: 10,
+                                        radius: 5,
                                         backgroundColor:
                                             data['availability'] == 'Available'
                                                 ? Colors.green
@@ -127,9 +92,7 @@ class _HomeDoctorsState extends State<HomeDoctors> {
                                       ),
                                       Text(
                                         data['availability'],
-                                        style: const TextStyle(
-                                          fontSize: 18,
-                                        ),
+                                        style: const TextStyle(),
                                       )
                                     ],
                                   )
