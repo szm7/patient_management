@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "147983329364",
+    "firebase_url": "https://hospitalmanagement-72039-default-rtdb.firebaseio.com",
+    "project_id": "hospitalmanagement-72039",
+    "storage_bucket": "hospitalmanagement-72039.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147983329364:android:de482fe10bddbb343725c1",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZEReiAR-WbDSna3DK5N327rqEHOXp7cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
